@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8">
@@ -49,7 +49,7 @@
         <div class="absolute top-[17px] left-[62.5%] right-[12.5%] h-0.5 bg-neutral-300"></div>
 
         <div class="flex">
-          <a href="Bereich.html" class="w-1/4 flex flex-col items-center">
+          <a href="screen01.html" class="w-1/4 flex flex-col items-center">
             <div class="relative z-10 w-[34px] h-[34px] rounded-full bg-primary-500 flex items-center justify-center">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                 <path d="M3 8l3.5 3.5L13 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -59,7 +59,7 @@
             <span class="mt-1 bg-primary-500 text-white text-xs font-semibold px-3 py-0.5 rounded-full whitespace-nowrap">Wohnort</span>
           </a>
 
-          <a href="Service.html" class="w-1/4 flex flex-col items-center">
+          <a href="screen02.html" class="w-1/4 flex flex-col items-center">
             <div class="relative z-10 w-[34px] h-[34px] rounded-full bg-primary-500 flex items-center justify-center">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                 <path d="M3 8l3.5 3.5L13 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -69,7 +69,7 @@
             <span class="mt-1 bg-primary-500 text-white text-xs font-semibold px-3 py-0.5 rounded-full whitespace-nowrap">Service</span>
           </a>
 
-          <a href="Datum.html" class="w-1/4 flex flex-col items-center">
+          <a href="screen03.html" class="w-1/4 flex flex-col items-center">
             <div class="relative z-10 w-[34px] h-[34px] rounded-full border-[3px] border-primary-500 bg-neutral-100 flex items-center justify-center">
               <div class="w-3 h-3 rounded-full bg-primary-500"></div>
             </div>
@@ -77,7 +77,7 @@
             <span class="mt-1 bg-primary-500 text-white text-xs font-semibold px-3 py-0.5 rounded-full whitespace-nowrap">Datum</span>
           </a>
 
-          <a href="Kontakt.html" class="w-1/4 flex flex-col items-center">
+          <a href="screen04.html" class="w-1/4 flex flex-col items-center">
             <div class="relative z-10 w-[34px] h-[34px] rounded-full bg-neutral-600 flex items-center justify-center">
               <span class="text-white font-bold text-sm leading-none">4</span>
             </div>
@@ -187,7 +187,7 @@
 
     <!-- Bottom Buttons -->
     <div class="bg-neutral-100 px-8 py-6 flex items-center gap-3 shrink-0">
-      <a href="Service.html" class="flex-1 h-14 border-2 border-neutral-300 rounded-md flex items-center justify-center">
+      <a href="screen02.html" class="flex-1 h-14 border-2 border-neutral-300 rounded-md flex items-center justify-center">
         <span class="text-sm font-semibold text-neutral-900">Zurück</span>
       </a>
       <button id="weiter-btn" type="button" class="flex-1 h-14 bg-primary-500 rounded-md flex items-center justify-center">
@@ -325,7 +325,7 @@
       var errorEl = document.getElementById('datum-error');
       if (dateOk && timeOk) {
         errorEl.style.display = 'none';
-        window.location.href = 'Kontakt.html';
+        window.location.href = 'screen04.html';
       } else {
         errorEl.style.display = 'flex';
         errorEl.scrollIntoView({ behavior: 'smooth', block: 'center' });

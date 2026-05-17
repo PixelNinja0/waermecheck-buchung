@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8">
@@ -40,7 +40,7 @@
         <div class="flex">
 
           <!-- Step 1: Wohnort (done) -->
-          <a href="Bereich.html" class="w-1/4 flex flex-col items-center">
+          <a href="screen01.html" class="w-1/4 flex flex-col items-center">
             <div class="relative z-10 w-[34px] h-[34px] rounded-full bg-primary-500 flex items-center justify-center">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                 <path d="M3 8l3.5 3.5L13 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -51,7 +51,7 @@
           </a>
 
           <!-- Step 2: Service (done) -->
-          <a href="Service.html" class="w-1/4 flex flex-col items-center">
+          <a href="screen02.html" class="w-1/4 flex flex-col items-center">
             <div class="relative z-10 w-[34px] h-[34px] rounded-full bg-primary-500 flex items-center justify-center">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                 <path d="M3 8l3.5 3.5L13 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -62,7 +62,7 @@
           </a>
 
           <!-- Step 3: Datum (done) -->
-          <a href="Datum.html" class="w-1/4 flex flex-col items-center">
+          <a href="screen03.html" class="w-1/4 flex flex-col items-center">
             <div class="relative z-10 w-[34px] h-[34px] rounded-full bg-primary-500 flex items-center justify-center">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                 <path d="M3 8l3.5 3.5L13 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -73,7 +73,7 @@
           </a>
 
           <!-- Step 4: Kontakt (active) -->
-          <a href="Kontakt.html" class="w-1/4 flex flex-col items-center">
+          <a href="screen04.html" class="w-1/4 flex flex-col items-center">
             <div class="relative z-10 w-[34px] h-[34px] rounded-full border-[3px] border-primary-500 bg-neutral-100 flex items-center justify-center">
               <div class="w-3 h-3 rounded-full bg-primary-500"></div>
             </div>
@@ -262,7 +262,7 @@
 
     <!-- Bottom Buttons -->
     <div class="bg-neutral-100 px-8 py-6 flex items-center gap-3 shrink-0">
-      <a href="Datum.html" class="flex-1 h-14 border-2 border-neutral-300 rounded-md flex items-center justify-center">
+      <a href="screen03.html" class="flex-1 h-14 border-2 border-neutral-300 rounded-md flex items-center justify-center">
         <span class="text-sm font-semibold text-neutral-900">Zurück</span>
       </a>
       <button id="weiter-btn" type="button" class="flex-1 h-14 bg-primary-500 rounded-md flex items-center justify-center cursor-pointer">
@@ -351,7 +351,7 @@
       }
 
       clearAll();
-      window.location.href = 'Review.html';
+      window.location.href = 'screen05.html';
     });
 
     ['vorname','name','strasse','hausnr','ort','telefon','email'].forEach(function(id) {
