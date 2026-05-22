@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8">
@@ -27,63 +27,63 @@
     .triangle-down-active {
       border-top-color: #e8720c;
     }
-    input::placeholder { color: #1a1a1a; font-weight: 600; font-size: 14px; }
+    input::placeholder { color: #1a1a1a; font-weight: 600; }
   </style>
 </head>
 <body class="bg-white">
 
-  <div class="max-w-[390px] mx-auto min-h-screen flex flex-col bg-white">
+  <div class="max-w-[390px] md:max-w-none mx-auto min-h-screen flex flex-col bg-white">
 
     <!-- Header -->
-    <header class="flex items-center justify-between px-4 py-[17px] bg-[#f5f5f5] h-[62px] shrink-0">
-      <svg width="20" height="22" viewBox="0 0 20 22" fill="#E8720C" xmlns="http://www.w3.org/2000/svg"><path d="M10 0C7.5 4.5 6 7.5 6 11C6 11 4.5 9.5 4.5 8C2 10.5 1 12.5 1 15C1 18.9 5.1 22 10 22C14.9 22 19 18.9 19 15C19 10 14.5 5.5 10 0ZM10 19C8 19 6.5 17.6 6.5 15.8C6.5 14 8 12.8 10 12C12 12.8 13.5 14 13.5 15.8C13.5 17.6 12 19 10 19Z"/></svg>
-      <span class="text-[14px] font-semibold leading-5 text-[#1a1a1a]">WärmeCheck</span>
+    <header class="flex items-center justify-between px-4 py-[17px] bg-[#f5f5f5] h-[62px] md:h-[80px] md:px-5 shrink-0">
+      <svg width="20" height="22" viewBox="0 0 20 22" fill="#E8720C" xmlns="http://www.w3.org/2000/svg" class="md:w-[37px] md:h-[41px]"><path d="M10 0C7.5 4.5 6 7.5 6 11C6 11 4.5 9.5 4.5 8C2 10.5 1 12.5 1 15C1 18.9 5.1 22 10 22C14.9 22 19 18.9 19 15C19 10 14.5 5.5 10 0ZM10 19C8 19 6.5 17.6 6.5 15.8C6.5 14 8 12.8 10 12C12 12.8 13.5 14 13.5 15.8C13.5 17.6 12 19 10 19Z"/></svg>
+      <span class="text-[14px] font-semibold leading-5 text-[#1a1a1a] md:text-[22px]">WärmeCheck</span>
     </header>
 
     <!-- Progress Stepper -->
-    <div class="bg-[#f5f5f5] px-6 py-5 flex justify-center shrink-0">
-      <div class="w-[343px] h-[68px] relative">
+    <div class="bg-[#f5f5f5] px-6 py-5 flex justify-center shrink-0 md:py-8">
+      <div class="w-[343px] h-[68px] relative md:w-[800px] md:h-[100px]">
 
-        <!-- Track lines -->
-        <div class="absolute top-[17px] left-[29px] right-[29px] h-0.5 bg-[#d4d4d4] shadow-[inset_0_4px_4px_rgba(0,0,0,0.25)]"></div>
+        <!-- Track line -->
+        <div class="absolute top-[17px] left-[29px] right-[29px] h-0.5 bg-[#d4d4d4] shadow-[inset_0_4px_4px_rgba(0,0,0,0.25)] md:top-[22px] md:left-[56px] md:right-[56px]"></div>
 
         <!-- Circles row -->
         <div class="absolute top-0 left-0 right-0 flex justify-between px-[2px]">
 
           <!-- Step 1: Active (Wohnort) -->
           <a href="screen01.html" class="flex flex-col items-center gap-1">
-            <div class="w-[34px] h-[34px] rounded-full border-[3px] border-[#e8720c] bg-[#f5f5f5] flex items-center justify-center">
-              <div class="w-3 h-3 rounded-full bg-[#e8720c]"></div>
+            <div class="w-[34px] h-[34px] rounded-full border-[3px] border-[#e8720c] bg-[#f5f5f5] flex items-center justify-center md:w-[44px] md:h-[44px]">
+              <div class="w-3 h-3 rounded-full bg-[#e8720c] md:w-4 md:h-4"></div>
             </div>
             <div class="triangle-down triangle-down-active"></div>
-            <span class="bg-[#e8720c] text-white text-[12px] font-semibold leading-4 px-[11px] py-[2px] rounded-full shadow-[inset_0_4px_4px_rgba(0,0,0,0.25)] whitespace-nowrap">Wohnort</span>
+            <span class="bg-[#e8720c] text-white text-[12px] font-semibold leading-4 px-[11px] py-[2px] rounded-full shadow-[inset_0_4px_4px_rgba(0,0,0,0.25)] whitespace-nowrap md:text-[14px] md:px-4">Wohnort</span>
           </a>
 
           <!-- Step 2: Service -->
           <a href="screen02.html" class="flex flex-col items-center gap-1">
-            <div class="w-[34px] h-[34px] rounded-full bg-[#6b6b6b] flex items-center justify-center">
-              <span class="text-white font-bold text-[14px] leading-none">2</span>
+            <div class="w-[34px] h-[34px] rounded-full bg-[#6b6b6b] flex items-center justify-center md:w-[44px] md:h-[44px]">
+              <span class="text-white font-bold text-[14px] leading-none md:text-[18px]">2</span>
             </div>
             <div class="triangle-down"></div>
-            <span class="bg-[#d4d4d4] text-white text-[12px] font-semibold leading-4 px-[14px] py-[2px] rounded-full shadow-[inset_0_4px_4px_rgba(0,0,0,0.25)] whitespace-nowrap">Service</span>
+            <span class="bg-[#d4d4d4] text-white text-[12px] font-semibold leading-4 px-[14px] py-[2px] rounded-full shadow-[inset_0_4px_4px_rgba(0,0,0,0.25)] whitespace-nowrap md:text-[14px] md:px-4">Service</span>
           </a>
 
           <!-- Step 3: Datum -->
           <a href="screen03.html" class="flex flex-col items-center gap-1">
-            <div class="w-[34px] h-[34px] rounded-full bg-[#6b6b6b] flex items-center justify-center">
-              <span class="text-white font-bold text-[14px] leading-none">3</span>
+            <div class="w-[34px] h-[34px] rounded-full bg-[#6b6b6b] flex items-center justify-center md:w-[44px] md:h-[44px]">
+              <span class="text-white font-bold text-[14px] leading-none md:text-[18px]">3</span>
             </div>
             <div class="triangle-down"></div>
-            <span class="bg-[#d4d4d4] text-white text-[12px] font-semibold leading-4 px-[15px] py-[2px] rounded-full shadow-[inset_0_4px_4px_rgba(0,0,0,0.25)] whitespace-nowrap">Datum</span>
+            <span class="bg-[#d4d4d4] text-white text-[12px] font-semibold leading-4 px-[15px] py-[2px] rounded-full shadow-[inset_0_4px_4px_rgba(0,0,0,0.25)] whitespace-nowrap md:text-[14px] md:px-4">Datum</span>
           </a>
 
           <!-- Step 4: Kontakt -->
           <a href="screen04.html" class="flex flex-col items-center gap-1">
-            <div class="w-[34px] h-[34px] rounded-full bg-[#6b6b6b] flex items-center justify-center">
-              <span class="text-white font-bold text-[14px] leading-none">4</span>
+            <div class="w-[34px] h-[34px] rounded-full bg-[#6b6b6b] flex items-center justify-center md:w-[44px] md:h-[44px]">
+              <span class="text-white font-bold text-[14px] leading-none md:text-[18px]">4</span>
             </div>
             <div class="triangle-down"></div>
-            <span class="bg-[#d4d4d4] text-white text-[12px] font-semibold leading-4 px-[13px] py-[2px] rounded-full shadow-[inset_0_4px_4px_rgba(0,0,0,0.25)] whitespace-nowrap">Kontakt</span>
+            <span class="bg-[#d4d4d4] text-white text-[12px] font-semibold leading-4 px-[13px] py-[2px] rounded-full shadow-[inset_0_4px_4px_rgba(0,0,0,0.25)] whitespace-nowrap md:text-[14px] md:px-4">Kontakt</span>
           </a>
 
         </div>
@@ -91,31 +91,31 @@
     </div>
 
     <!-- Main Form Section -->
-    <section class="bg-[#f5f5f5] px-8 py-6 flex flex-col items-center h-[376px] shrink-0">
-      <div class="flex flex-col gap-6 items-center w-[306px]">
+    <section class="bg-[#f5f5f5] px-8 py-10 flex flex-col items-center shrink-0 md:py-16">
+      <div class="flex flex-col gap-6 items-center w-full max-w-[306px] md:max-w-[700px] md:gap-[41px]">
 
         <!-- Title & Subtitle -->
         <div class="flex flex-col gap-4 items-center text-center text-[#1a1a1a]">
-          <h2 class="text-[20px] font-semibold leading-[30px]">
+          <h2 class="text-[20px] font-semibold leading-[30px] md:text-[30px] md:leading-[36px]">
             In welchem Bereich wohnen Sie?
           </h2>
-          <p class="text-[14px] font-normal leading-5">
+          <p class="text-[14px] font-normal leading-5 md:text-[16px] md:leading-[24px]">
             Bitte geben Sie Ihren Ort oder PLZ ein
           </p>
         </div>
 
         <!-- Input + Button -->
-        <div class="flex flex-col gap-8 w-[270px]">
+        <div class="flex flex-col gap-8 w-full md:max-w-[600px] md:gap-[41px]">
           <input
             id="plz-input"
             type="text"
             placeholder="PLZ oder Ort eingeben"
             maxlength="5"
             inputmode="numeric"
-            class="h-14 border-[1.5px] border-[#d4d4d4] rounded-[6px] px-5 text-[14px] font-semibold text-[#1a1a1a] bg-transparent outline-none focus:border-[#e8720c] transition-colors"
+            class="h-14 border-[1.5px] border-[#d4d4d4] rounded-[6px] px-5 text-[14px] font-semibold text-[#1a1a1a] bg-transparent outline-none focus:border-[#e8720c] transition-colors md:pl-[50px] md:text-[22px] md:rounded-[8px]"
           />
-          <button id="weiter-btn" type="button" class="h-14 bg-[#e8720c] rounded-xl flex items-center justify-center cursor-pointer w-full">
-            <span class="text-[14px] font-semibold text-white leading-5">Weiter zur Serviceauswahl</span>
+          <button id="weiter-btn" type="button" class="h-14 bg-[#e8720c] rounded-xl flex items-center justify-center cursor-pointer w-full md:h-[83px] md:rounded-2xl">
+            <span class="text-[14px] font-semibold text-white leading-5 md:text-[22px]">Weiter zur Serviceauswahl</span>
           </button>
         </div>
 
@@ -123,7 +123,7 @@
     </section>
 
     <!-- Error Section -->
-    <div id="error-section" class="bg-[#fef2f2] px-8 py-6 flex flex-col items-start h-[295px] shrink-0" style="display:none">
+    <div id="error-section" class="bg-[#fef2f2] px-8 py-8 flex flex-col items-start shrink-0 md:items-center md:py-12" style="display:none">
       <div class="flex flex-col gap-1.5 items-center text-center w-full">
         <p class="text-[14px] font-semibold leading-5 text-[#6b6b6b] w-full">Fehlerfall</p>
         <div class="flex flex-col gap-4 items-center w-full">

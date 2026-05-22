@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8">
@@ -29,169 +29,179 @@
     .time-slot { cursor: pointer; transition: border-color 0.15s; }
     .time-slot:hover { border-color: #E8720C; }
     .time-slot.selected { border-color: #E8720C; }
+
+    @media (min-width: 768px) {
+      .day-cell {
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 1rem;
+        border-radius: 8px;
+      }
+    }
   </style>
 </head>
 <body class="bg-white font-sans">
 
-  <div class="max-w-[390px] mx-auto min-h-screen flex flex-col bg-white">
+  <div class="max-w-[390px] md:max-w-none mx-auto min-h-screen flex flex-col bg-white">
 
     <!-- Header -->
-    <header class="flex items-center justify-between px-4 py-4 bg-neutral-100 shrink-0">
-      <svg width="20" height="22" viewBox="0 0 20 22" fill="#E8720C" xmlns="http://www.w3.org/2000/svg"><path d="M10 0C7.5 4.5 6 7.5 6 11C6 11 4.5 9.5 4.5 8C2 10.5 1 12.5 1 15C1 18.9 5.1 22 10 22C14.9 22 19 18.9 19 15C19 10 14.5 5.5 10 0ZM10 19C8 19 6.5 17.6 6.5 15.8C6.5 14 8 12.8 10 12C12 12.8 13.5 14 13.5 15.8C13.5 17.6 12 19 10 19Z"/></svg>
-      <span class="text-sm font-semibold text-neutral-900">WärmeCheck</span>
+    <header class="flex items-center justify-between px-4 py-4 bg-neutral-100 h-[62px] md:h-[80px] md:px-5 shrink-0">
+      <svg width="20" height="22" viewBox="0 0 20 22" fill="#E8720C" xmlns="http://www.w3.org/2000/svg" class="md:w-[37px] md:h-[41px]"><path d="M10 0C7.5 4.5 6 7.5 6 11C6 11 4.5 9.5 4.5 8C2 10.5 1 12.5 1 15C1 18.9 5.1 22 10 22C14.9 22 19 18.9 19 15C19 10 14.5 5.5 10 0ZM10 19C8 19 6.5 17.6 6.5 15.8C6.5 14 8 12.8 10 12C12 12.8 13.5 14 13.5 15.8C13.5 17.6 12 19 10 19Z"/></svg>
+      <span class="text-sm font-semibold text-neutral-900 md:text-[22px]">WärmeCheck</span>
     </header>
 
     <!-- Progress Stepper: steps 1+2 done, step 3 active, step 4 inactive -->
-    <div class="bg-neutral-100 px-6 py-4 flex justify-center shrink-0">
-      <div class="w-full relative">
-        <div class="absolute top-[17px] left-[12.5%] w-[25%] h-0.5 bg-primary-500"></div>
-        <div class="absolute top-[17px] left-[37.5%] w-[25%] h-0.5 bg-primary-500"></div>
-        <div class="absolute top-[17px] left-[62.5%] right-[12.5%] h-0.5 bg-neutral-300"></div>
+    <div class="bg-neutral-100 px-6 py-4 flex justify-center shrink-0 md:py-8">
+      <div class="w-full md:max-w-[800px] relative">
+        <div class="absolute top-[17px] left-[12.5%] w-[25%] h-0.5 bg-primary-500 md:top-[22px]"></div>
+        <div class="absolute top-[17px] left-[37.5%] w-[25%] h-0.5 bg-primary-500 md:top-[22px]"></div>
+        <div class="absolute top-[17px] left-[62.5%] right-[12.5%] h-0.5 bg-neutral-300 md:top-[22px]"></div>
 
         <div class="flex">
           <a href="screen01.html" class="w-1/4 flex flex-col items-center">
-            <div class="relative z-10 w-[34px] h-[34px] rounded-full bg-primary-500 flex items-center justify-center">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <path d="M3 8l3.5 3.5L13 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+            <div class="relative z-10 w-[34px] h-[34px] rounded-full bg-primary-500 flex items-center justify-center md:w-[44px] md:h-[44px]">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </div>
             <div class="triangle-down triangle-orange mt-1"></div>
-            <span class="mt-1 bg-primary-500 text-white text-xs font-semibold px-3 py-0.5 rounded-full whitespace-nowrap">Wohnort</span>
+            <span class="mt-1 bg-primary-500 text-white text-xs font-semibold px-3 py-0.5 rounded-full whitespace-nowrap md:text-[14px] md:px-4">Wohnort</span>
           </a>
-
           <a href="screen02.html" class="w-1/4 flex flex-col items-center">
-            <div class="relative z-10 w-[34px] h-[34px] rounded-full bg-primary-500 flex items-center justify-center">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <path d="M3 8l3.5 3.5L13 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+            <div class="relative z-10 w-[34px] h-[34px] rounded-full bg-primary-500 flex items-center justify-center md:w-[44px] md:h-[44px]">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </div>
             <div class="triangle-down triangle-orange mt-1"></div>
-            <span class="mt-1 bg-primary-500 text-white text-xs font-semibold px-3 py-0.5 rounded-full whitespace-nowrap">Service</span>
+            <span class="mt-1 bg-primary-500 text-white text-xs font-semibold px-3 py-0.5 rounded-full whitespace-nowrap md:text-[14px] md:px-4">Service</span>
           </a>
-
           <a href="screen03.html" class="w-1/4 flex flex-col items-center">
-            <div class="relative z-10 w-[34px] h-[34px] rounded-full border-[3px] border-primary-500 bg-neutral-100 flex items-center justify-center">
-              <div class="w-3 h-3 rounded-full bg-primary-500"></div>
+            <div class="relative z-10 w-[34px] h-[34px] rounded-full border-[3px] border-primary-500 bg-neutral-100 flex items-center justify-center md:w-[44px] md:h-[44px]">
+              <div class="w-3 h-3 rounded-full bg-primary-500 md:w-4 md:h-4"></div>
             </div>
             <div class="triangle-down triangle-orange mt-1"></div>
-            <span class="mt-1 bg-primary-500 text-white text-xs font-semibold px-3 py-0.5 rounded-full whitespace-nowrap">Datum</span>
+            <span class="mt-1 bg-primary-500 text-white text-xs font-semibold px-3 py-0.5 rounded-full whitespace-nowrap md:text-[14px] md:px-4">Datum</span>
           </a>
-
           <a href="screen04.html" class="w-1/4 flex flex-col items-center">
-            <div class="relative z-10 w-[34px] h-[34px] rounded-full bg-neutral-600 flex items-center justify-center">
-              <span class="text-white font-bold text-sm leading-none">4</span>
+            <div class="relative z-10 w-[34px] h-[34px] rounded-full bg-neutral-600 flex items-center justify-center md:w-[44px] md:h-[44px]">
+              <span class="text-white font-bold text-sm leading-none md:text-[18px]">4</span>
             </div>
             <div class="triangle-down mt-1"></div>
-            <span class="mt-1 bg-neutral-300 text-white text-xs font-semibold px-3 py-0.5 rounded-full whitespace-nowrap">Kontakt</span>
+            <span class="mt-1 bg-neutral-300 text-white text-xs font-semibold px-3 py-0.5 rounded-full whitespace-nowrap md:text-[14px] md:px-4">Kontakt</span>
           </a>
         </div>
       </div>
     </div>
 
     <!-- Main Content -->
-    <section class="bg-neutral-100 px-8 py-6 flex flex-col items-center shrink-0">
-      <div class="flex flex-col gap-6 items-center w-full">
+    <section class="bg-neutral-100 px-8 py-6 flex flex-col items-center shrink-0 md:px-20 md:py-16">
+      <div class="flex flex-col gap-6 items-center w-full md:gap-8">
 
-        <h2 class="text-xl font-semibold text-neutral-900 text-center w-full">
+        <h2 class="text-xl font-semibold text-neutral-900 text-center w-full md:text-[30px] md:leading-[36px]">
           Tag &amp; Uhrzeit auswählen
         </h2>
 
-        <!-- Calendar -->
-        <div class="bg-white border border-[#e2e8f0] rounded-lg p-2 w-[268px] flex flex-col gap-4">
+        <!-- Two-column layout on desktop -->
+        <div class="flex flex-col gap-6 items-center w-full md:flex-row md:items-start md:gap-12">
 
-          <div class="flex items-center justify-between px-2 pt-1">
-            <button id="prev-btn" class="border border-[#e2e8f0] rounded-md p-1 flex items-center justify-center">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <path d="M10 12L6 8l4-4" stroke="#6b6b6b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </button>
-            <span id="month-label" class="text-sm font-medium text-neutral-900"></span>
-            <button id="next-btn" class="border border-[#e2e8f0] rounded-md p-1 flex items-center justify-center">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <path d="M6 12l4-4-4-4" stroke="#6b6b6b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </button>
+          <!-- Calendar (left) -->
+          <div class="bg-white border border-[#e2e8f0] rounded-lg p-2 w-[268px] flex flex-col gap-4 shrink-0 md:w-[520px] md:p-6 md:gap-6">
+
+            <div class="flex items-center justify-between px-2 pt-1 md:px-0 md:pt-0">
+              <button id="prev-btn" class="border border-[#e2e8f0] rounded-md p-1 flex items-center justify-center md:p-2">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="md:w-5 md:h-5">
+                  <path d="M10 12L6 8l4-4" stroke="#6b6b6b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+              <span id="month-label" class="text-sm font-medium text-neutral-900 md:text-lg md:font-semibold"></span>
+              <button id="next-btn" class="border border-[#e2e8f0] rounded-md p-1 flex items-center justify-center md:p-2">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="md:w-5 md:h-5">
+                  <path d="M6 12l4-4-4-4" stroke="#6b6b6b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+
+            <div id="calendar-grid" class="grid grid-cols-7 text-center">
+              <div class="h-6 flex items-center justify-center text-xs text-neutral-600 md:h-10 md:text-sm">So</div>
+              <div class="h-6 flex items-center justify-center text-xs text-neutral-600 md:h-10 md:text-sm">Mo</div>
+              <div class="h-6 flex items-center justify-center text-xs text-neutral-600 md:h-10 md:text-sm">Di</div>
+              <div class="h-6 flex items-center justify-center text-xs text-neutral-600 md:h-10 md:text-sm">Mi</div>
+              <div class="h-6 flex items-center justify-center text-xs text-neutral-600 md:h-10 md:text-sm">Do</div>
+              <div class="h-6 flex items-center justify-center text-xs text-neutral-600 md:h-10 md:text-sm">Fr</div>
+              <div class="h-6 flex items-center justify-center text-xs text-neutral-600 md:h-10 md:text-sm">Sa</div>
+              <!-- Days injected by JS -->
+            </div>
           </div>
 
-          <div id="calendar-grid" class="grid grid-cols-7 text-center">
-            <div class="h-6 flex items-center justify-center text-xs text-neutral-600">So</div>
-            <div class="h-6 flex items-center justify-center text-xs text-neutral-600">Mo</div>
-            <div class="h-6 flex items-center justify-center text-xs text-neutral-600">Di</div>
-            <div class="h-6 flex items-center justify-center text-xs text-neutral-600">Mi</div>
-            <div class="h-6 flex items-center justify-center text-xs text-neutral-600">Do</div>
-            <div class="h-6 flex items-center justify-center text-xs text-neutral-600">Fr</div>
-            <div class="h-6 flex items-center justify-center text-xs text-neutral-600">Sa</div>
-            <!-- Days injected by JS -->
+          <!-- Right column: hint + time slots + technician -->
+          <div class="flex flex-col gap-4 w-[268px] md:flex-1 md:w-auto md:gap-5">
+
+            <!-- Hint -->
+            <p id="hint-text" class="text-xs font-semibold text-neutral-600 text-center md:text-base md:leading-6">
+              Bitte wählen Sie zuerst ein Datum im Kalender.
+            </p>
+
+            <!-- Time Slots -->
+            <div id="time-slots" class="flex flex-col gap-4 w-full md:gap-5" style="display:none">
+
+              <div class="time-slot relative border-2 border-neutral-300 rounded-md h-16 flex items-center px-3 gap-3 md:h-auto md:py-8 md:px-12 md:gap-[17px] md:rounded-2xl" data-tech="Max Mustermann">
+                <div class="checkmark absolute -top-2.5 -right-2.5 w-7 h-7 rounded-full bg-primary-500 items-center justify-center shadow-sm" style="display:none">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7l3 3L11.5 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <span class="text-sm font-semibold text-neutral-900 whitespace-nowrap md:text-[22px]">08:00 - 09:00</span>
+                <div class="w-px h-10 bg-neutral-300 shrink-0 md:h-[41px]"></div>
+                <span class="text-sm font-normal text-neutral-900 md:text-[20px]">Max Mustermann</span>
+              </div>
+
+              <div class="time-slot relative border-2 border-neutral-300 rounded-md h-16 flex items-center px-3 gap-3 md:h-auto md:py-8 md:px-12 md:gap-[17px] md:rounded-2xl" data-tech="Max Mustermann">
+                <div class="checkmark absolute -top-2.5 -right-2.5 w-7 h-7 rounded-full bg-primary-500 items-center justify-center shadow-sm" style="display:none">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7l3 3L11.5 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <span class="text-sm font-semibold text-neutral-900 whitespace-nowrap md:text-[22px]">10:00 - 11:00</span>
+                <div class="w-px h-10 bg-neutral-300 shrink-0 md:h-[41px]"></div>
+                <span class="text-sm font-normal text-neutral-900 md:text-[20px]">Max Mustermann</span>
+              </div>
+
+              <div class="time-slot relative border-2 border-neutral-300 rounded-md h-16 flex items-center px-3 gap-3 md:h-auto md:py-8 md:px-12 md:gap-[17px] md:rounded-2xl" data-tech="Jürgen Baumeister">
+                <div class="checkmark absolute -top-2.5 -right-2.5 w-7 h-7 rounded-full bg-primary-500 items-center justify-center shadow-sm" style="display:none">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7l3 3L11.5 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <span class="text-sm font-semibold text-neutral-900 whitespace-nowrap md:text-[22px]">13:00 - 14:00</span>
+                <div class="w-px h-10 bg-neutral-300 shrink-0 md:h-[41px]"></div>
+                <span class="text-sm font-normal text-neutral-900 md:text-[20px]">Jürgen Baumeister</span>
+              </div>
+
+            </div>
+
+            <!-- Technician Info Box -->
+            <div id="technician-box" class="bg-primary-100 rounded-md w-full py-4 px-4 md:rounded-2xl md:py-6 md:px-8" style="display:none">
+              <div class="flex items-center justify-between w-full px-2">
+                <div class="flex flex-col gap-1">
+                  <span id="tech-name" class="text-sm font-semibold text-neutral-600 md:text-[18px]"></span>
+                  <span class="text-sm font-normal text-neutral-600 md:text-[16px]">Ihr Techniker</span>
+                </div>
+                <img
+                  src="https://www.figma.com/api/mcp/asset/fa7b2d6c-a4a7-4fe5-a0ae-e32d399d27de"
+                  alt="Techniker"
+                  class="w-[93px] h-[93px] rounded-full object-cover"
+                />
+              </div>
+            </div>
+
           </div>
         </div>
-
-        <!-- Hint -->
-        <p id="hint-text" class="text-xs font-semibold text-neutral-600 text-center">
-          Bitte wählen Sie zuerst ein Datum im Kalender.
-        </p>
-
-        <!-- Time Slots — hidden until a date is picked -->
-        <div id="time-slots" class="flex flex-col gap-4 w-[268px]" style="display:none">
-
-          <div class="time-slot relative border-2 border-neutral-300 rounded-md h-16 flex items-center px-3 gap-3" data-tech="Max Mustermann">
-            <div class="checkmark absolute -top-2.5 -right-2.5 w-7 h-7 rounded-full bg-primary-500 items-center justify-center shadow-sm" style="display:none">
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7l3 3L11.5 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <span class="text-sm font-semibold text-neutral-900 whitespace-nowrap">08:00 - 09:00</span>
-            <div class="w-px h-10 bg-neutral-300 shrink-0"></div>
-            <span class="text-sm font-normal text-neutral-900">Max Mustermann</span>
-          </div>
-
-          <div class="time-slot relative border-2 border-neutral-300 rounded-md h-16 flex items-center px-3 gap-3" data-tech="Max Mustermann">
-            <div class="checkmark absolute -top-2.5 -right-2.5 w-7 h-7 rounded-full bg-primary-500 items-center justify-center shadow-sm" style="display:none">
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7l3 3L11.5 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <span class="text-sm font-semibold text-neutral-900 whitespace-nowrap">10:00 - 11:00</span>
-            <div class="w-px h-10 bg-neutral-300 shrink-0"></div>
-            <span class="text-sm font-normal text-neutral-900">Max Mustermann</span>
-          </div>
-
-          <div class="time-slot relative border-2 border-neutral-300 rounded-md h-16 flex items-center px-3 gap-3" data-tech="Jürgen Baumeister">
-            <div class="checkmark absolute -top-2.5 -right-2.5 w-7 h-7 rounded-full bg-primary-500 items-center justify-center shadow-sm" style="display:none">
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 7l3 3L11.5 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <span class="text-sm font-semibold text-neutral-900 whitespace-nowrap">13:00 - 14:00</span>
-            <div class="w-px h-10 bg-neutral-300 shrink-0"></div>
-            <span class="text-sm font-normal text-neutral-900">Jürgen Baumeister</span>
-          </div>
-
-        </div>
-
-        <!-- Technician Info Box — hidden until a time slot is picked -->
-        <div id="technician-box" class="bg-primary-100 rounded-md w-full py-4 px-4" style="display:none">
-          <div class="flex items-center justify-between w-full px-2">
-            <div class="flex flex-col gap-1">
-              <span id="tech-name" class="text-sm font-semibold text-neutral-600"></span>
-              <span class="text-sm font-normal text-neutral-600">Ihr Techniker</span>
-            </div>
-            <img
-              src="https://www.figma.com/api/mcp/asset/fa7b2d6c-a4a7-4fe5-a0ae-e32d399d27de"
-              alt="Techniker"
-              class="w-[93px] h-[93px] rounded-full object-cover"
-            />
-          </div>
-        </div>
-
       </div>
     </section>
 
     <!-- Error Section -->
-    <div id="datum-error" class="px-8 py-6 flex items-center justify-center shrink-0" style="display:none; background-color:#FEF2F2">
-      <p class="text-lg font-normal text-center" style="color:#DC2626">Bitte Wählen Sie ein Datum und eine Uhrzeit aus.</p>
+    <div id="datum-error" class="px-8 py-6 flex items-center justify-center shrink-0 md:px-20" style="display:none; background-color:#FEF2F2">
+      <p class="text-lg font-normal text-center md:text-[20px]" style="color:#DC2626">Bitte Wählen Sie ein Datum und eine Uhrzeit aus.</p>
     </div>
 
     <!-- Bottom Buttons -->
-    <div class="bg-neutral-100 px-8 py-6 flex items-center gap-3 shrink-0">
-      <a href="screen02.html" class="flex-1 h-14 border-2 border-neutral-300 rounded-md flex items-center justify-center">
-        <span class="text-sm font-semibold text-neutral-900">Zurück</span>
+    <div class="bg-neutral-100 px-8 py-6 flex items-center gap-3 shrink-0 md:px-20 md:py-16 md:gap-5">
+      <a href="screen02.html" class="flex-1 h-14 border-2 border-neutral-300 rounded-md flex items-center justify-center md:h-[93px] md:rounded-2xl">
+        <span class="text-sm font-semibold text-neutral-900 md:text-[22px]">Zurück</span>
       </a>
-      <button id="weiter-btn" type="button" class="flex-1 h-14 bg-primary-500 rounded-md flex items-center justify-center">
-        <span class="text-sm font-semibold text-white">Weiter</span>
+      <button id="weiter-btn" type="button" class="flex-1 h-14 bg-primary-500 rounded-md flex items-center justify-center md:h-[93px] md:rounded-2xl">
+        <span class="text-sm font-semibold text-white md:text-[22px]">Weiter</span>
       </button>
     </div>
 
@@ -200,38 +210,25 @@
   <script>
     var MONTHS = ['Januar','Februar','März','April','Mai','Juni',
                   'Juli','August','September','Oktober','November','Dezember'];
-
-    // Mark specific dates as unavailable: 'YYYY-M-D'
     var UNAVAILABLE = { '2026-6-18': true };
-
     var curYear = 2026;
-    var curMonth = 5; // 0-indexed → June
-
-    // ── Calendar rendering ────────────────────────────────────────────────
+    var curMonth = 5;
 
     function renderCalendar(year, month) {
       document.getElementById('month-label').textContent = MONTHS[month] + ' ' + year;
-
       var grid = document.getElementById('calendar-grid');
       while (grid.children.length > 7) grid.removeChild(grid.lastChild);
-
-      var firstDay   = new Date(year, month, 1).getDay();
+      var firstDay    = new Date(year, month, 1).getDay();
       var daysInMonth = new Date(year, month + 1, 0).getDate();
       var daysInPrev  = new Date(year, month, 0).getDate();
-
-      // Leading cells from previous month
       for (var i = firstDay - 1; i >= 0; i--) {
         grid.appendChild(makeCell(daysInPrev - i, 'outside'));
       }
-
-      // Current month
       for (var d = 1; d <= daysInMonth; d++) {
         var key = year + '-' + (month + 1) + '-' + d;
         var state = UNAVAILABLE[key] ? 'unavailable' : 'available';
         grid.appendChild(makeCell(d, state, key));
       }
-
-      // Trailing cells from next month
       var filled = grid.children.length - 7;
       var trail  = (7 - (filled % 7)) % 7;
       for (var t = 1; t <= trail; t++) {
@@ -243,7 +240,7 @@
       var el = document.createElement('div');
       el.className = 'day-cell';
       el.textContent = day;
-      if (state === 'outside')      { el.style.opacity = '0.3'; }
+      if (state === 'outside')       { el.style.opacity = '0.3'; }
       else if (state === 'unavailable') { el.style.opacity = '0.2'; }
       else {
         el.classList.add('available');
@@ -253,20 +250,13 @@
       return el;
     }
 
-    // ── Date selection ────────────────────────────────────────────────────
-
     function onDateClick(e) {
-      // Deselect previous
       document.querySelectorAll('.day-cell.selected').forEach(function(c) {
         c.classList.remove('selected');
       });
       e.currentTarget.classList.add('selected');
-
-      // Show time slots, hide hint
       document.getElementById('hint-text').style.display = 'none';
       document.getElementById('time-slots').style.display = 'flex';
-
-      // Reset time & technician
       clearTimeSelection();
     }
 
@@ -278,8 +268,6 @@
       document.getElementById('technician-box').style.display = 'none';
     }
 
-    // ── Time slot selection ───────────────────────────────────────────────
-
     document.querySelectorAll('.time-slot').forEach(function(slot) {
       slot.addEventListener('click', function() {
         document.querySelectorAll('.time-slot').forEach(function(s) {
@@ -288,14 +276,11 @@
         });
         slot.classList.add('selected');
         slot.querySelector('.checkmark').style.display = 'flex';
-
         document.getElementById('tech-name').textContent = slot.dataset.tech;
         document.getElementById('technician-box').style.display = 'block';
         checkAndHideError();
       });
     });
-
-    // ── Month navigation ──────────────────────────────────────────────────
 
     document.getElementById('prev-btn').addEventListener('click', function() {
       curMonth--;
@@ -317,8 +302,6 @@
       document.getElementById('technician-box').style.display = 'none';
     }
 
-    // ── Weiter validation ─────────────────────────────────────────────────
-
     document.getElementById('weiter-btn').addEventListener('click', function() {
       var dateOk = document.querySelector('.day-cell.selected') !== null;
       var timeOk = document.querySelector('.time-slot.selected') !== null;
@@ -332,14 +315,11 @@
       }
     });
 
-    // Hide error once both date and time are selected
     function checkAndHideError() {
       if (document.querySelector('.day-cell.selected') && document.querySelector('.time-slot.selected')) {
         document.getElementById('datum-error').style.display = 'none';
       }
     }
-
-    // ── Init ──────────────────────────────────────────────────────────────
 
     renderCalendar(curYear, curMonth);
   </script>

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8">
@@ -19,67 +19,63 @@
 </head>
 <body class="bg-white font-sans">
 
-  <div class="max-w-[390px] mx-auto min-h-screen flex flex-col bg-white">
+  <div class="max-w-[390px] md:max-w-none mx-auto min-h-screen flex flex-col bg-white">
 
     <!-- Header -->
-    <header class="flex items-center justify-between px-4 py-4 bg-neutral-100 shrink-0">
-      <svg width="20" height="22" viewBox="0 0 20 22" fill="#E8720C" xmlns="http://www.w3.org/2000/svg"><path d="M10 0C7.5 4.5 6 7.5 6 11C6 11 4.5 9.5 4.5 8C2 10.5 1 12.5 1 15C1 18.9 5.1 22 10 22C14.9 22 19 18.9 19 15C19 10 14.5 5.5 10 0ZM10 19C8 19 6.5 17.6 6.5 15.8C6.5 14 8 12.8 10 12C12 12.8 13.5 14 13.5 15.8C13.5 17.6 12 19 10 19Z"/></svg>
-      <span class="text-sm font-semibold text-neutral-900">WärmeCheck</span>
+    <header class="flex items-center justify-between px-4 py-4 bg-neutral-100 shrink-0 md:h-[80px] md:px-5">
+      <svg width="20" height="22" viewBox="0 0 20 22" fill="#E8720C" xmlns="http://www.w3.org/2000/svg" class="md:w-[37px] md:h-[41px]"><path d="M10 0C7.5 4.5 6 7.5 6 11C6 11 4.5 9.5 4.5 8C2 10.5 1 12.5 1 15C1 18.9 5.1 22 10 22C14.9 22 19 18.9 19 15C19 10 14.5 5.5 10 0ZM10 19C8 19 6.5 17.6 6.5 15.8C6.5 14 8 12.8 10 12C12 12.8 13.5 14 13.5 15.8C13.5 17.6 12 19 10 19Z"/></svg>
+      <span class="text-sm font-semibold text-neutral-900 md:text-[22px]">WärmeCheck</span>
     </header>
 
     <!-- Progress Stepper: all 4 done -->
-    <div class="bg-neutral-100 px-6 py-4 flex justify-center shrink-0">
-      <div class="w-full relative">
-        <div class="absolute top-[17px] left-[12.5%] right-[12.5%] h-0.5 bg-primary-500"></div>
+    <div class="bg-neutral-100 px-6 py-4 flex justify-center shrink-0 md:py-8">
+      <div class="w-full relative md:max-w-[800px]">
+        <div class="absolute top-[17px] left-[12.5%] right-[12.5%] h-0.5 bg-primary-500 md:top-[22px]"></div>
         <div class="flex">
-          <!-- Step 1 -->
           <a href="screen01.html" class="w-1/4 flex flex-col items-center">
-            <div class="relative z-10 w-[34px] h-[34px] rounded-full bg-primary-500 flex items-center justify-center">
+            <div class="relative z-10 w-[34px] h-[34px] rounded-full bg-primary-500 flex items-center justify-center md:w-[44px] md:h-[44px]">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </div>
             <div class="triangle-down mt-1"></div>
-            <span class="mt-1 bg-primary-500 text-white text-xs font-semibold px-3 py-0.5 rounded-full whitespace-nowrap">Wohnort</span>
+            <span class="mt-1 bg-primary-500 text-white text-xs font-semibold px-3 py-0.5 rounded-full whitespace-nowrap md:text-[14px] md:px-4">Wohnort</span>
           </a>
-          <!-- Step 2 -->
           <a href="screen02.html" class="w-1/4 flex flex-col items-center">
-            <div class="relative z-10 w-[34px] h-[34px] rounded-full bg-primary-500 flex items-center justify-center">
+            <div class="relative z-10 w-[34px] h-[34px] rounded-full bg-primary-500 flex items-center justify-center md:w-[44px] md:h-[44px]">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </div>
             <div class="triangle-down mt-1"></div>
-            <span class="mt-1 bg-primary-500 text-white text-xs font-semibold px-3 py-0.5 rounded-full whitespace-nowrap">Service</span>
+            <span class="mt-1 bg-primary-500 text-white text-xs font-semibold px-3 py-0.5 rounded-full whitespace-nowrap md:text-[14px] md:px-4">Service</span>
           </a>
-          <!-- Step 3 -->
           <a href="screen03.html" class="w-1/4 flex flex-col items-center">
-            <div class="relative z-10 w-[34px] h-[34px] rounded-full bg-primary-500 flex items-center justify-center">
+            <div class="relative z-10 w-[34px] h-[34px] rounded-full bg-primary-500 flex items-center justify-center md:w-[44px] md:h-[44px]">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </div>
             <div class="triangle-down mt-1"></div>
-            <span class="mt-1 bg-primary-500 text-white text-xs font-semibold px-3 py-0.5 rounded-full whitespace-nowrap">Datum</span>
+            <span class="mt-1 bg-primary-500 text-white text-xs font-semibold px-3 py-0.5 rounded-full whitespace-nowrap md:text-[14px] md:px-4">Datum</span>
           </a>
-          <!-- Step 4 -->
           <a href="screen04.html" class="w-1/4 flex flex-col items-center">
-            <div class="relative z-10 w-[34px] h-[34px] rounded-full bg-primary-500 flex items-center justify-center">
+            <div class="relative z-10 w-[34px] h-[34px] rounded-full bg-primary-500 flex items-center justify-center md:w-[44px] md:h-[44px]">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </div>
             <div class="triangle-down mt-1"></div>
-            <span class="mt-1 bg-primary-500 text-white text-xs font-semibold px-3 py-0.5 rounded-full whitespace-nowrap">Kontakt</span>
+            <span class="mt-1 bg-primary-500 text-white text-xs font-semibold px-3 py-0.5 rounded-full whitespace-nowrap md:text-[14px] md:px-4">Kontakt</span>
           </a>
         </div>
       </div>
     </div>
 
     <!-- Review Card -->
-    <div class="bg-neutral-100 px-8 py-6 flex justify-center shrink-0">
-      <div class="bg-white rounded-md w-[253px] px-4 py-4 flex flex-col gap-4">
+    <div class="bg-neutral-100 px-8 py-6 flex justify-center shrink-0 md:px-20 md:py-12">
+      <div class="bg-white rounded-md w-[253px] px-4 py-4 flex flex-col gap-4 md:w-[489px] md:rounded-2xl md:pt-[17px] md:pb-[25px] md:pl-[17px] md:pr-[15px] md:gap-[18px]">
 
         <!-- Item 1: Stadtteil -->
         <div class="flex items-start gap-[50px]">
-          <div class="w-8 h-8 rounded-lg bg-primary-500 flex items-center justify-center shrink-0">
-            <span class="text-sm font-semibold text-white">1</span>
+          <div class="w-8 h-8 rounded-lg bg-primary-500 flex items-center justify-center shrink-0 md:w-10 md:h-10">
+            <span class="text-sm font-semibold text-white md:text-[22px]">1</span>
           </div>
           <div class="flex flex-col gap-1">
-            <p class="text-sm font-semibold text-neutral-900">Stadtteil</p>
-            <p class="text-xs font-normal text-neutral-600">Hamburg- Wandsbek</p>
+            <p class="text-sm font-semibold text-neutral-900 md:text-[22px]">Stadtteil</p>
+            <p class="text-xs font-normal text-neutral-600 md:text-[14px]">Hamburg-Wandsbek</p>
             <a href="screen01.html" class="text-xs font-normal text-primary-500 underline">zum bearbeiten</a>
           </div>
         </div>
@@ -88,12 +84,12 @@
 
         <!-- Item 2: Service -->
         <div class="flex items-start gap-[50px]">
-          <div class="w-8 h-8 rounded-lg bg-primary-500 flex items-center justify-center shrink-0">
-            <span class="text-sm font-semibold text-white">2</span>
+          <div class="w-8 h-8 rounded-lg bg-primary-500 flex items-center justify-center shrink-0 md:w-10 md:h-10">
+            <span class="text-sm font-semibold text-white md:text-[22px]">2</span>
           </div>
           <div class="flex flex-col gap-1">
-            <p class="text-sm font-semibold text-neutral-900">Service</p>
-            <p class="text-xs font-normal text-neutral-600">
+            <p class="text-sm font-semibold text-neutral-900 md:text-[22px]">Service</p>
+            <p class="text-xs font-normal text-neutral-600 md:text-[14px]">
               Jährliche Wartung Gasheizung – <span class="text-error-500">215 EUR</span>
             </p>
             <a href="screen02.html" class="text-xs font-normal text-primary-500 underline">zum bearbeiten</a>
@@ -104,12 +100,12 @@
 
         <!-- Item 3: Datum & Uhrzeit -->
         <div class="flex items-start gap-[50px]">
-          <div class="w-8 h-8 rounded-lg bg-primary-500 flex items-center justify-center shrink-0">
-            <span class="text-sm font-semibold text-white">3</span>
+          <div class="w-8 h-8 rounded-lg bg-primary-500 flex items-center justify-center shrink-0 md:w-10 md:h-10">
+            <span class="text-sm font-semibold text-white md:text-[22px]">3</span>
           </div>
           <div class="flex flex-col gap-1">
-            <p class="text-sm font-semibold text-neutral-900">Datum &amp; Uhrzeit</p>
-            <div class="flex flex-col text-xs font-normal text-neutral-600">
+            <p class="text-sm font-semibold text-neutral-900 md:text-[22px]">Datum &amp; Uhrzeit</p>
+            <div class="flex flex-col text-xs font-normal text-neutral-600 md:text-[14px]">
               <p>10.06.2026</p>
               <p>08:00 - 09:00 Uhr</p>
               <p>Max Mustermann</p>
@@ -122,12 +118,12 @@
 
         <!-- Item 4: Kontaktdaten -->
         <div class="flex items-start gap-[50px]">
-          <div class="w-8 h-8 rounded-lg bg-primary-500 flex items-center justify-center shrink-0">
-            <span class="text-sm font-semibold text-white">4</span>
+          <div class="w-8 h-8 rounded-lg bg-primary-500 flex items-center justify-center shrink-0 md:w-10 md:h-10">
+            <span class="text-sm font-semibold text-white md:text-[22px]">4</span>
           </div>
           <div class="flex flex-col gap-1">
-            <p class="text-sm font-semibold text-neutral-900">Kontaktdaten</p>
-            <div class="flex flex-col text-xs font-normal text-neutral-600">
+            <p class="text-sm font-semibold text-neutral-900 md:text-[22px]">Kontaktdaten</p>
+            <div class="flex flex-col text-xs font-normal text-neutral-600 md:text-[14px]">
               <p>Markus Hoffmann</p>
               <p>Musterstraße 12, Hamburg</p>
             </div>
@@ -138,8 +134,8 @@
       </div>
     </div>
 
-    <!-- Total Price -->
-    <div class="bg-neutral-100 px-8 py-2 flex justify-center shrink-0">
+    <!-- Total Price (mobile only) -->
+    <div class="bg-neutral-100 px-8 py-2 flex justify-center shrink-0 md:hidden">
       <div class="flex flex-col items-center gap-1 w-[248px]">
         <p class="text-sm font-semibold text-neutral-900 text-center">Gesamtpreis 215 EUR</p>
         <hr class="border-neutral-300 w-full"/>
@@ -148,15 +144,15 @@
 
     <!-- CTA Section -->
     <div class="bg-neutral-100 px-8 py-6 flex flex-col items-center gap-4 shrink-0">
-      <div class="flex flex-col gap-6 items-center w-[253px]">
-        <p class="text-base font-normal text-neutral-900 text-center">
+      <div class="flex flex-col gap-6 items-center w-[253px] md:w-full md:max-w-[600px] md:gap-8">
+        <p class="text-base font-normal text-neutral-900 text-center md:text-[18px] md:leading-[29px]">
           Wollen Sie wirklich für 215 EUR verbindlich buchen?
         </p>
-        <a href="screen06.html" class="w-full h-14 bg-primary-500 rounded-md flex items-center justify-center">
-          <span class="text-sm font-semibold text-white">Verbindlich buchen</span>
+        <a href="screen06.html" class="w-full h-14 bg-primary-500 rounded-md flex items-center justify-center md:rounded-2xl">
+          <span class="text-sm font-semibold text-white md:text-[22px]">Verbindlich buchen</span>
         </a>
       </div>
-      <a href="screen00.html" class="h-14 flex items-center justify-center">
+      <a href="screen00.html" class="h-14 flex items-center justify-center md:h-[86px]">
         <span class="text-sm font-semibold text-neutral-600 underline">Zurück zur Übersicht</span>
       </a>
     </div>

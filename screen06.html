@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8">
@@ -13,44 +13,42 @@
 </head>
 <body class="bg-white font-sans">
 
-  <div class="max-w-[390px] mx-auto min-h-screen flex flex-col bg-white">
+  <div class="max-w-[390px] md:max-w-none mx-auto min-h-screen flex flex-col bg-white">
 
     <!-- Header -->
-    <header class="flex items-center justify-between px-4 py-4 bg-neutral-100 shrink-0">
-      <svg width="20" height="22" viewBox="0 0 20 22" fill="#E8720C" xmlns="http://www.w3.org/2000/svg"><path d="M10 0C7.5 4.5 6 7.5 6 11C6 11 4.5 9.5 4.5 8C2 10.5 1 12.5 1 15C1 18.9 5.1 22 10 22C14.9 22 19 18.9 19 15C19 10 14.5 5.5 10 0ZM10 19C8 19 6.5 17.6 6.5 15.8C6.5 14 8 12.8 10 12C12 12.8 13.5 14 13.5 15.8C13.5 17.6 12 19 10 19Z"/></svg>
-      <span class="text-sm font-semibold text-neutral-900">WärmeCheck</span>
+    <header class="flex items-center justify-between px-4 py-4 bg-neutral-100 shrink-0 md:h-[80px] md:px-5">
+      <svg width="20" height="22" viewBox="0 0 20 22" fill="#E8720C" xmlns="http://www.w3.org/2000/svg" class="md:w-[37px] md:h-[41px]"><path d="M10 0C7.5 4.5 6 7.5 6 11C6 11 4.5 9.5 4.5 8C2 10.5 1 12.5 1 15C1 18.9 5.1 22 10 22C14.9 22 19 18.9 19 15C19 10 14.5 5.5 10 0ZM10 19C8 19 6.5 17.6 6.5 15.8C6.5 14 8 12.8 10 12C12 12.8 13.5 14 13.5 15.8C13.5 17.6 12 19 10 19Z"/></svg>
+      <span class="text-sm font-semibold text-neutral-900 md:text-[22px]">WärmeCheck</span>
     </header>
 
     <!-- Success Banner -->
-    <div class="bg-success-100 px-8 py-8 flex items-center gap-7 shrink-0">
-      <!-- Green circle with checkmark -->
+    <div class="bg-success-100 px-8 py-8 flex items-center gap-7 shrink-0 md:h-[162px] md:justify-center md:gap-[29px]">
       <div class="w-[66px] h-[66px] rounded-full bg-success-500 flex items-center justify-center shrink-0">
         <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
           <path d="M7 18l7.5 7.5L29 11" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       </div>
-      <p class="text-xl font-semibold text-success-500 whitespace-nowrap">Ihr Termin ist gebucht!</p>
+      <p class="text-xl font-semibold text-success-500 whitespace-nowrap md:text-[30px]">Ihr Termin ist gebucht!</p>
     </div>
 
     <!-- Booking Details Card -->
-    <div class="bg-neutral-100 px-8 py-6 flex justify-center shrink-0">
-      <div class="bg-white rounded-md w-full px-5 pt-5 pb-6 flex flex-col gap-4">
+    <div class="bg-neutral-100 px-8 py-6 flex justify-center shrink-0 md:px-12 md:py-8">
+      <div class="bg-white rounded-md w-full px-5 pt-5 pb-6 flex flex-col gap-4 md:max-w-[343px] md:rounded-2xl">
 
         <!-- Card Title -->
         <div class="flex flex-col items-center gap-2">
-          <p class="text-sm font-semibold text-neutral-900 text-center">Ihre Buchung</p>
+          <p class="text-sm font-semibold text-neutral-900 text-center md:text-[22px]">Ihre Buchung</p>
           <hr class="w-full border-neutral-300"/>
         </div>
 
         <!-- Location -->
         <div class="flex items-center gap-5">
           <div class="shrink-0 w-6 h-6 flex items-center justify-center">
-            <!-- location_on icon -->
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#1a1a1a"/>
             </svg>
           </div>
-          <p class="text-base font-normal text-neutral-900">Hamburg-Wandsbek</p>
+          <p class="text-base font-normal text-neutral-900 md:text-[18px] md:leading-[29px]">Hamburg-Wandsbek</p>
         </div>
 
         <hr class="border-neutral-300 w-[182px] self-center"/>
@@ -58,12 +56,11 @@
         <!-- Service -->
         <div class="flex items-center gap-5">
           <div class="shrink-0 w-6 h-6 flex items-center justify-center">
-            <!-- tools / wrench icon -->
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M22.7 19.3L13.6 10.2C14.5 7.6 13.9 4.6 11.8 2.5 9.5.2 6.1-.4 3.2 1L7.7 5.5 5.5 7.7 1 3.2C-.4 6.1.2 9.5 2.5 11.8c2.1 2.1 5.1 2.7 7.7 1.8l9.1 9.1c.4.4 1 .4 1.4 0l2-2c.4-.4.4-1.1 0-1.4z" fill="#1a1a1a"/>
             </svg>
           </div>
-          <p class="text-base font-normal text-neutral-900">Jährliche Wartung Gasheizung – 215 EUR</p>
+          <p class="text-base font-normal text-neutral-900 md:text-[18px] md:leading-[29px]">Jährliche Wartung Gasheizung – 215 EUR</p>
         </div>
 
         <hr class="border-neutral-300 w-[182px] self-center"/>
@@ -71,13 +68,12 @@
         <!-- Date & Time -->
         <div class="flex items-center gap-4">
           <div class="shrink-0 w-6 h-6 flex items-center justify-center">
-            <!-- calendar-check icon -->
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M19 3h-1V1h-2v2H8V1H6v2H5C3.9 3 3 3.9 3 5v16c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H5V8h14v13zM7 10h5v5H7z" fill="#1a1a1a"/>
               <path d="M10.5 17.5L8 15l1.4-1.4 1.1 1.1 3.1-3.1L15 13l-4.5 4.5z" fill="#1a1a1a"/>
             </svg>
           </div>
-          <p class="text-base font-normal text-neutral-900">10.06.2026, 08:00 - 09:00 Uhr</p>
+          <p class="text-base font-normal text-neutral-900 md:text-[18px] md:leading-[29px]">10.06.2026, 08:00 - 09:00 Uhr</p>
         </div>
 
         <hr class="border-neutral-300 w-[182px] self-center"/>
@@ -85,22 +81,21 @@
         <!-- Technician -->
         <div class="flex items-center gap-4">
           <div class="shrink-0 w-6 h-6 flex items-center justify-center">
-            <!-- account_circle icon -->
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" fill="#1a1a1a"/>
             </svg>
           </div>
-          <p class="text-base font-normal text-neutral-900">Techniker: Max Mustermann</p>
+          <p class="text-base font-normal text-neutral-900 md:text-[18px] md:leading-[29px]">Techniker: Max Mustermann</p>
         </div>
 
       </div>
     </div>
 
     <!-- Was passiert als nächstes? -->
-    <div class="bg-neutral-100 px-8 py-6 flex flex-col gap-6 shrink-0">
+    <div class="bg-neutral-100 px-8 py-6 flex flex-col gap-6 shrink-0 md:px-12 md:py-8">
       <div class="flex flex-col gap-6 items-center text-center w-full">
-        <p class="text-sm font-semibold text-neutral-900">Was passiert als nächstes?</p>
-        <p class="text-sm font-normal text-neutral-900">
+        <p class="text-sm font-semibold text-neutral-900 md:text-[22px]">Was passiert als nächstes?</p>
+        <p class="text-sm font-normal text-neutral-900 md:text-[16px] md:leading-[24px]">
           Ihr Techniker Max Mustermann kommt am 10.06.2026 um 08:00 Uhr. Bitte halten Sie das Typenschild Ihrer Heizung bereit.
         </p>
       </div>
@@ -108,14 +103,12 @@
     </div>
 
     <!-- Actions -->
-    <div class="bg-neutral-100 px-8 py-6 flex flex-col items-center gap-4 shrink-0">
-      <div class="w-[256px] flex flex-col gap-4">
-        <!-- Kalender-Button -->
-        <a href="#" class="h-14 bg-primary-500 rounded-md flex items-center justify-center">
-          <span class="text-sm font-semibold text-white">Termin im Kalender speichern</span>
+    <div class="bg-neutral-100 px-8 py-6 flex flex-col items-center gap-4 shrink-0 md:px-12 md:py-8">
+      <div class="w-[256px] flex flex-col gap-4 md:w-[550px]">
+        <a href="#" class="h-14 bg-primary-500 rounded-md flex items-center justify-center md:rounded-2xl">
+          <span class="text-sm font-semibold text-white md:text-[22px]">Termin im Kalender speichern</span>
         </a>
-        <!-- Stornieren Link -->
-        <a href="#" class="h-14 flex flex-col items-center justify-center">
+        <a href="#" class="h-14 flex flex-col items-center justify-center md:h-[85px]">
           <span class="text-sm font-semibold text-neutral-600 underline text-center">Termin ändern oder stornieren?</span>
           <span class="text-sm font-semibold text-neutral-600 underline text-center">Klicken sie hier.</span>
         </a>
@@ -123,7 +116,7 @@
     </div>
 
     <!-- Footer -->
-    <div class="bg-neutral-100 px-8 py-3 flex flex-col items-center gap-4 shrink-0">
+    <div class="bg-neutral-100 px-8 py-3 flex flex-col items-center gap-4 shrink-0 md:px-12">
       <hr class="border-neutral-300 w-[289px]"/>
       <a href="index.html" class="text-xs font-semibold text-neutral-600 underline text-center">
         Klicken Sie hier um zurück zur Hauptseite zu kommen
